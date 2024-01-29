@@ -1,6 +1,6 @@
 {
   "name": "sample-for-st-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "exports": {
+    "./components": {
+      "require": "./dist/components.cjs",
+      "import": "./dist/components.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
